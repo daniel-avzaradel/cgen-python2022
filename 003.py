@@ -57,3 +57,12 @@ def total(*tpl):
     return sum
 
 print(total(1, 4, 6, 12, 22))
+
+
+## Anonymous Functions (Lambda)
+# Using the lambda keyword we can define an anonymous function
+
+# lambda param1, param2, param3 ... paramN : expression
+
+ob = lambda a, b, c, d : a + b + c + d
+print(ob(1, 2, 3, 4))
