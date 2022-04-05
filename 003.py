@@ -22,6 +22,8 @@ print(income)
 # nonlocal
 # defines a variable not to be on local scope
 
+## nested functions
+
 def a():
     temp = 12
     def b():
@@ -39,5 +41,19 @@ def doSomething():
 
 doSomething()
 
+# the func(name=value) syntax
 
-## nested functions
+def f(a, b):
+    print(a, b)
+
+x = f(a=3, b=5)
+
+## unpacking values
+
+def total(*tpl):
+    sum = 0
+    for x in tpl:
+        sum = sum + x
+    return sum
+
+print(total(1, 4, 6, 12, 22))
