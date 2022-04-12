@@ -14,3 +14,18 @@ for item in data:
 
 # the main() function
 
+
+# CLASSES
+# Using a class statement we create a class object and assign it with a name
+
+class Rectangle:
+    def __init__(self, w, h):
+        self.width = w
+        self.height = h
+    def area(self):
+        return self.width * self.height
+
+a = Rectangle(4, 3)
+b = Rectangle(5, 6)
+
+print('area of a is %d and area of b is %d' % (a.area(), b.area()))
