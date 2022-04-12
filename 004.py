@@ -29,3 +29,14 @@ a = Rectangle(4, 3)
 b = Rectangle(5, 6)
 
 print('area of a is %d and area of b is %d' % (a.area(), b.area()))
+
+
+## Circle
+
+import circle
+
+ob1 = circle.Circle(3)
+ob2 = circle.Circle(6)
+
+print(ob1.area(), ob1.perimeter())
+print(ob2.area(), ob2.perimeter())
