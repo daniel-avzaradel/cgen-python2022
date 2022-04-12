@@ -12,9 +12,6 @@ for item in data:
     print(item)
 
 
-# the main() function
-
-
 # CLASSES
 # Using a class statement we create a class object and assign it with a name
 
@@ -29,6 +26,26 @@ a = Rectangle(4, 3)
 b = Rectangle(5, 6)
 
 print('area of a is %d and area of b is %d' % (a.area(), b.area()))
+
+
+## super()
+
+class Person:
+    def __init__(self,id,name):
+        self.id = id
+        self.name = name
+    def details(self):
+        return "id=%d name=%s" % (self.id,self.name)
+
+class Student(Person):
+    def __init__(self,id,name,average):
+        self.average = average
+        super().__init__(id,name)
+    def details(self):
+        return super().details() + " average=%d" % self.average
+
+ob = Student(123123,"danidin",98)
+print(ob.details())
 
 
 ## Circle
