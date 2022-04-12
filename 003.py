@@ -66,3 +66,5 @@ print(total(1, 4, 6, 12, 22))
 
 ob = lambda a, b, c, d : a + b + c + d
 print(ob(1, 2, 3, 4))
+
+numbers1 = [1, 2, 5, 12, -4, -88, 40]
