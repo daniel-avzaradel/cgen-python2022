@@ -4,15 +4,14 @@ class Student:
     self.lastName = lastName
     self.id = id
     self.average = average
+  def __str__(self) -> str:
+      return '%s %s' % (self.firstName, self.lastName)
 
-student1 = Student('Jack', 'Sparrow', 1, 92)
-student2 = Student('Hector', 'Barbosa', 2, 82)
-student3 = Student('Frank', 'Castle', 3, 84)
-student4 = Student('Bruce', 'Wayne', 4, 99)
-student5 = Student('Tony', 'Stark', 5, 89)
-student6 = Student('Peter', 'Parker', 6, 79)
 
-students = [student1, student2, student3, student4, student5, student6]
+students = [Student('Jack', 'Sparrow', 1, 92), Student('Hector', 'Barbosa', 2, 82), Student('Frank', 'Castle', 3, 84), Student('Bruce', 'Wayne', 4, 99), Student('Tony', 'Stark', 5, 89), Student('Peter', 'Parker', 6, 79)
+]
 
-best_students = filter(lambda s: s.average > 90, students)
-print(best_students)
+x = filter(lambda s: s.average > 90, students)
+
+for ob in x:
+  print(ob)
