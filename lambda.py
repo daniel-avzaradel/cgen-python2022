@@ -31,3 +31,14 @@ print(numbers2)
 ## max built-in function
 
 print('max', max(9, 19, 22, 192))
+students = [
+  ("mosh", 12342, 89),
+  ("dan", 11232, 99),
+  ("john", 11242, 82),
+  ("mosh", 11352, 92),
+]
+
+def f(std):
+  return std[2]
+
+print(max(students, key = f))
