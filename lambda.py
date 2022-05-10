@@ -50,7 +50,7 @@ products = [
     ]
 
 fn = lambda products: max(products, key= lambda product: product[1])
-# fn =max(products, key= lambda product: product[1])
+# OR => fn =max(products, key= lambda product: product[1])
 print(fn(products))
 
 ## min built-in function
@@ -61,3 +61,15 @@ print(worse_student)
 
 fnc = lambda products: min(products, key=lambda product:product[1])
 print(fnc(products))
+
+
+## filter function
+
+numbers3 = (12, 343, 55, 331, 35, 801, 1192)
+def even(num):
+  return num%2 == 0
+
+filter_even = filter(even, numbers3)
+
+for numb in filter_even:
+  print(numb)
