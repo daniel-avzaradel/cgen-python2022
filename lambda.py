@@ -65,11 +65,19 @@ print(fnc(products))
 
 ## filter function
 
-numbers3 = (12, 343, 55, 331, 35, 801, 1192)
+numbers3 = (12, 343, 56, 331, 35, 801, 1192)
 def even(num):
   return num%2 == 0
 
-filter_even = filter(even, numbers3)
+filter_even = filter(lambda num: num%2==0, numbers3)
 
 for numb in filter_even:
   print(numb)
+
+
+## lambda expression abuse
+# AVOID using lambda expressions assigned to variables
+# i.e.: f = lambda a, b: a + b
+
+def add(a, b):
+  return a+b
