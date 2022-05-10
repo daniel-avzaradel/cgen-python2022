@@ -22,5 +22,7 @@ def f(num):
   return num * 10
 
 numbers1 = [10, 2, 4]
-
 print(convert(numbers1, f))
+
+numbers2 = convert(numbers1, f)
+print(numbers2)
