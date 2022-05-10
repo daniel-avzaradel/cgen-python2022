@@ -15,6 +15,7 @@ b = ['a', 'b', 'c', a]
 print(b)
 
 c = b.copy()
+b[0] = 'abrakadabra'
 print(c)
 
 a[0] = 999
