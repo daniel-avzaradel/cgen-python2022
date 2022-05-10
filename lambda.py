@@ -49,12 +49,15 @@ products = [
     ('chairex',880)
     ]
 
-# fn = lambda products: max(products, key= lambda product: product[1])
-fn =max(products, key= lambda product: product[1])
-print(fn)
+fn = lambda products: max(products, key= lambda product: product[1])
+# fn =max(products, key= lambda product: product[1])
+print(fn(products))
 
 ## min built-in function
 
 print(min(numbers1))
 worse_student = min(students, key=lambda ob:ob[2])
 print(worse_student)
+
+fnc = lambda products: min(products, key=lambda product:product[1])
+print(fnc(products))
