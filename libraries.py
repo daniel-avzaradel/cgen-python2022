@@ -21,3 +21,16 @@ print('=============')
 countries = df["country"]
 print(countries)
 print(type(countries))
+
+
+## Selecting Rows
+
+ds = pd.DataFrame({ "first name":["moshe","daniel","tal"],
+ "last name":["israeli","cohen","lahat"],
+"id":["234234","645645","678678"],
+"average":[85,90,64]
+ })
+
+beststudents = ds[ds["average"]>80]
+print(beststudents)
+print(type(beststudents))
