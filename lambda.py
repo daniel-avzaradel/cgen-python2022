@@ -42,3 +42,19 @@ def f(std):
   return std[2]
 
 print(max(students, key = f))
+
+products = [
+    ('carpeta',990),
+    ('tabola',200),
+    ('chairex',880)
+    ]
+
+# fn = lambda products: max(products, key= lambda product: product[1])
+fn =max(products, key= lambda product: product[1])
+print(fn)
+
+## min built-in function
+
+print(min(numbers1))
+worse_student = min(students, key=lambda ob:ob[2])
+print(worse_student)
