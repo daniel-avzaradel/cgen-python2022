@@ -34,3 +34,30 @@ class Rectangle:
 newRectangle = Rectangle(12, 20)
 newRectangle.printDetails()
 newRectangle.area()
+
+
+## polymorphism in Python
+
+class Dog:
+  def __init__(self, name):
+    self.name = name
+  def hello(self):
+    print("wof wof")
+
+class Cat:
+  def __init__(self, name):
+    self.name = name
+  def hello(self):
+    print("miau miau")
+
+class Cow:
+  def __init__(self, name):
+    self.name = name
+  def hello(self):
+    print("moo moo")
+
+cow = Cow('Mitsy')
+cat = Cat('Cookie')
+dog = Dog('Kevin')
+
+print(dog.name, cow.name, cat.name)
