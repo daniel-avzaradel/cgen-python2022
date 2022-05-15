@@ -61,3 +61,24 @@ cat = Cat('Cookie')
 dog = Dog('Kevin')
 
 print(dog.name, cow.name, cat.name)
+
+
+### exception handling
+
+def func(num):
+  if num < 0:
+    raise IndexError
+  return num * 10
+
+try:
+ num = 18-12
+ print(func(num))
+except:
+ print('exception was caught')
+print('continue...')
+try:
+ num = 8-12
+ print(func(num))
+except:
+ print('exception was caught')
+print('continue...')
